@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- tag responsiva boostrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Site curso WebDev- By LM</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://i.pinimg.com/originals/2a/4a/4c/2a4a4c46d00a295115606aa211800190.jpg"
+
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- link icons bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <!-- link bundle bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <!-- logo -->
+            <img src="https://br.cellep.com/wp-content/themes/cellep/assets/img/logo_branca.svg" alt="cel.lep">
+
+            <!-- button menu hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- itens de navegação -->
+            <div class="collapse navbar-collapse" id="navegacao2">
+                <ul class="navbar-nav ml-auto">
+                    <!-- (li>a)*3 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./agenda.html">Agenda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Entidades</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a target="_blank" class="dropdown-item text-white" href="http://br.cellep.com/estacaohack">
+                                <i class="bi bi-file-earmark-person mr-1"></i> Cellep
+                            </a>
+                            <a target="_blank" class="dropdown-item text-white" href="http://estacaohack.fb.com">
+                                <i class="bi bi-facebook mr-1"></i> Estação Hack
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./areaDoAluno.html">Área do aluno</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12 mt-4 mb-5">
+                <h2 class="text-warning mb-4 d-flex justify-content-center">Outubro de 2021</h2>
+                <table id="agenda" class="table table-bordered table-striped text-center">
+                    <!--Cabecalho do calendario-->
+                    <thead>
+                        <tr>
+                            <th scope="col">Domingo</th>
+                            <th scope="col">Segunda</th>
+                            <th scope="col">Terça</th>
+                            <th scope="col">Quarta</th>
+                            <th scope="col">Quinta</th>
+                            <th scope="col">Sexta</th>
+                            <th scope="col">Sabado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Primeira linha do calendario-->
+                        <tr>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle">1</td>
+                            <td class="align-middle bg-info">2</td>
+                        </tr>
+                        <!--Segunda linha do calendario-->
+                        <tr>
+                            <td class="align-middle bg-danger">3</td>
+                            <td class="align-middle">4</td>
+                            <td class="align-middle">5</td>
+                            <td class="align-middle">6</td>
+                            <td class="align-middle">7</td>
+                            <td class="align-middle">8</td>
+                            <td class="align-middle bg-info">9</td>
+                        </tr>
+                        <!--Terceira linha do calendario-->
+                        <tr>
+                            <td class="align-middle bg-danger">10</td>
+                            <td class="align-middle">11</td>
+                            <td class="align-middle">12</td>
+                            <td class="align-middle">13</td>
+                            <td class="align-middle">14</td>
+                            <td class="align-middle">15</td>
+                            <td class="align-middle bg-info">16</td>
+                        </tr>
+                        <!--Quarta linha do calendario-->
+                        <tr>
+                            <td class="align-middle bg-danger">17</td>
+                            <td class="align-middle">18</td>
+                            <td class="align-middle">19</td>
+                            <td class="align-middle">20</td>
+                            <td class="align-middle">21</td>
+                            <td class="align-middle">22</td>
+                            <td class="align-middle bg-info">23</td>
+                        </tr>
+                        <!--Quinta linha do calendario-->
+                        <tr>
+                            <td class="align-middle bg-danger">24</td>
+                            <td class="align-middle">25</td>
+                            <td class="align-middle">26</td>
+                            <td class="align-middle">27</td>
+                            <td class="align-middle">28</td>
+                            <td class="align-middle">29</td>
+                            <td class="align-middle bg-info">30</td>
+                        </tr>
+                        <!--Sexta linha do calendario-->
+                        <tr>
+                            <td class="align-middle bg-danger">31</td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                            <td class="align-middle"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="container text-center pt-2">
+            <span class="text-white font-italic">
+                Criado por Lucas Souza e Cellep
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

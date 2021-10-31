@@ -1,0 +1,88 @@
+*{
+    scroll-behavior: smooth;
+}
+
+/*Barra de scroll personalizada*/
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #90ceec;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #616161;
+    border-radius: 15px;
+    border: 3px solid #616161;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #3a3939;
+    border-radius: 20px;
+    border: 3px solid #3a3939;
+    transition: .95s ease-in-out;
+}
+
+.nav-link,
+dropdown-item {
+    color: white !important;
+}
+
+.nav-link:hover:not(.active),
+.dropdown-item:hover {
+    background-color: #7952b3;
+    color: white !important;
+}
+
+/* Criar a classe bg-imagem */
+.bg-imagem {
+    height: 48vw;
+    background-image: url(https://nova-escola-producao.s3.amazonaws.com/7BJcgAnbFEmR42F5BzVBU3Bta2JAQGbh2dW2HqmhzN2GkVVBDaYv2nb9rknj/relacoes-etnico-raciais.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-imagem p {
+    font-size: 4vw;
+    text-shadow: 4px 4px 8px black;
+    margin-top: -250px;
+}
+
+.btnInscricao:hover{
+    background-image: linear-gradient(#b1b1b1, #2c29e2);
+    border: none;
+    transition: .25s;
+}
+
+/* seletor tag footer */
+
+footer {
+    height: 50px;
+}
+
+/* seletor ID agenda */
+#agenda th {
+    font-size: 1.5vw;
+}
+
+#agenda td {
+    height: 100px;
+    /* 100% / 7 colunas */
+    width: 14.29%;
+}
+
+/* cor dos números no sabado */
+#agenda td.bg-info {
+    color: white;
+}
+
+#agenda td.bg-info:hover{
+    color: white;
+    background-color: #2e68d3;
+}
+
+/* cor dos números no domingo */
+#agenda td.bg-danger {
+    color: white;
+}
